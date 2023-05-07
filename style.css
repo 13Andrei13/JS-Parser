@@ -1,0 +1,81 @@
+body {
+    font-family: Courier, monospace;
+    /* text-align: center; */
+}
+#submitXML {
+    font-family: Courier, monospace;
+    margin-left:10em;
+}
+#submitJSON {
+    font-family: Courier, monospace;
+    margin-left:9.5em;
+}
+#inputLabel, form input[type=submit], #showXML, #showJSON, #showStylesheet {
+    font-family: Courier, monospace;
+    background-color: #7F9CCB;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px ridge black;
+    font-size: 0.8rem;
+    height: auto;
+}
+#inputLabel:hover, form input[type=submit]:hover, #showXML:hover, #showJSON:hover, #showStylesheet:hover {
+    background-color: #2D5BA3;
+    color: white;
+}
+#inputLabel:active, form input[type=submit]:active, #showXML:active, #showJSON:active, #showStylesheet:active {
+    background-color: #0D3F8F;
+    color: white;
+}
+
+ 
+
+form input[type=file] {
+    display: none;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #ff9800;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+
+.alert.success {
+    background-color: #04AA6D;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+table {
+    text-align: center;
+    padding: auto;
+}
+
+#xml_phone_table_title, #xml_people_table_title, #xml_auction_table_title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+#json_phone_table_title, #json_people_table_title, #json_auction_table_title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

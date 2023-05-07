@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="/main.js"></script>
+
+    <title>Document</title>
+</head>
+<body style="text-align:center;">
+
+    <h1 style="text-align:center;">
+        Evidența unor licitații online pentru telefoane
+    </h1><br>
+    
+    <h2>
+        Import the XML:
+    </h2>   
+
+    <form id="xmlForm" onsubmit="return false">
+        <label for="myXmlFile" id="inputLabel">Select XML file:</label>
+        <input type="file" name="myXmlFile" id="myXmlFile" accept=".xml" multiple>
+        <label id="xml_file_status">No files selected</label>
+        <input type="submit" id="submitXML" value="Submit XML">
+    </form>
+
+    <h2>
+        Import the JSON:
+    </h2> 
+
+    <form id="jsonForm" onsubmit="return false">
+        <label for="myJsonFile" id="inputLabel">Select JSON file:</label>
+        <input type="file" name="myJsonFile" id="myJsonFile" accept=".json">
+        <label id="json_file_status">No files selected</label>
+        <input type="submit" id="submitJSON" value="Submit JSON">
+    </form>
+    <br><br>
+
+    <div class="xml alert success">
+        <span class="closebtn">&times;</span>
+        <strong>SUCCESS!</strong> The XML file was submitted successfully
+    </div>
+
+    <div class="json alert success">
+        <span class="closebtn">&times;</span>
+        <strong>SUCCESS!</strong> The JSON file was submitted successfully
+    </div>
+
+    <h2>
+        Show data:
+    </h2>
+
+    <div>
+        <button id="showXML" type="button">Show the XML</button> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button id="showStylesheet" type="button">Show XML with Stylesheet</button>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button id="showJSON" type="button">Show the JSON</button>
+    </div>
+    
+    <div class="xml alert warning">
+        <span class="closebtn">&times;</span>
+        <strong>WARNING!</strong> XML file was not submitted
+    </div>
+    
+    <div class="json alert warning">
+        <span class="closebtn">&times;</span>
+        <strong>WARNING!</strong> JSON file was not submitted
+    </div>
+
+    <table id="xml_produse_table" cellpadding="15px"></table>
+    <table id="xml_animal_table" cellpadding="15px"></table>
+    <table id="xml_mancare_table" cellpadding="15px"></table>
+
+    <table id="json_auctions_table" cellpadding="15px"></table>
+    <table id="xml_animal_table" cellpadding="15px"></table>
+    <table id="json_peoples_table" cellpadding="15px"></table>
+
+    <div id='xslt_test'></div>
+
+    
+</body>
+</html>
